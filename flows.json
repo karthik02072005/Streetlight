@@ -1,0 +1,1062 @@
+[
+    {
+        "id": "311cf2801f1cc4de",
+        "type": "tab",
+        "label": "Smart Street Light Dashboard",
+        "disabled": false,
+        "info": "ESP32 Smart Street Light MQTT Dashboard with beautiful template-based UI"
+    },
+    {
+        "id": "8afd1a2b3961ee61",
+        "type": "mqtt-broker",
+        "name": "Mqtt",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "772b953f2a4d863a",
+        "type": "ui_group",
+        "name": "Home",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fde047a9e1ebdc0d",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cd2c680b2031182a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "193026aa14715432",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7ad32085c18b7e4c",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "cd2c680b2031182a",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5cf6fbc4cc02a214",
+        "type": "ui_group",
+        "name": "",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "156c36ef37db7cd6",
+        "type": "ui_group",
+        "name": "Floor1",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7032449c277ec375",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5fc1b7f4cce249ad",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "931756164c66aac1",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "cd2c680b2031182a",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8e716b103dbbda8d",
+        "type": "ui_group",
+        "name": "humidity",
+        "tab": "cd2c680b2031182a",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5985220c178510ca",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "cd2c680b2031182a",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7ade8cbcaf6441cd",
+        "type": "ui_group",
+        "name": "Environment",
+        "tab": "cd2c680b2031182a",
+        "order": 5,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c7d14bcbdf94920e",
+        "type": "ui_group",
+        "name": "Switch",
+        "tab": "cd2c680b2031182a",
+        "order": 6,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Broker",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ui_tab_main",
+        "type": "ui_tab",
+        "name": "Smart Street Lighting Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_group_env",
+        "type": "ui_group",
+        "name": "Environmental Monitoring",
+        "tab": "ui_tab_main",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ui_group_motion",
+        "type": "ui_group",
+        "name": "Motion & System Health",
+        "tab": "ui_tab_main",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ui_group_control",
+        "type": "ui_group",
+        "name": "Advanced Control Panel",
+        "tab": "ui_tab_main",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "broker1",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true
+    },
+    {
+        "id": "tab1",
+        "type": "ui_tab",
+        "name": "Smart Street Light",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "grp1",
+        "type": "ui_group",
+        "name": "Street Light Monitor",
+        "tab": "tab1",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "fc38e8e4a58754a2",
+        "type": "ui_group",
+        "name": "Dual Street Light System",
+        "tab": "tab1",
+        "order": 9,
+        "width": "6"
+    },
+    {
+        "id": "b221cf5c4ce9317d",
+        "type": "ui_group",
+        "name": "Dual Street Light System",
+        "tab": "tab1",
+        "order": 9,
+        "width": "6"
+    },
+    {
+        "id": "f23e23daf4495d5c",
+        "type": "ui_group",
+        "name": "Dual Street Light System",
+        "tab": "tab1",
+        "order": 9,
+        "width": "6"
+    },
+    {
+        "id": "9b97f9fd551e1224",
+        "type": "mqtt-broker",
+        "name": "MQTT",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "91f52a05a09593b2",
+        "type": "ui_tab",
+        "name": "flow1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6e54188d8a0a6e0b",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "91f52a05a09593b2",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aeb29920a23e3123",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "91f52a05a09593b2",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e880afbd22ef055b",
+        "type": "ui_tab",
+        "name": "Harsh",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "344734fd963f4f93",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "e880afbd22ef055b",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2c34214e6e337488",
+        "type": "ui_tab",
+        "name": "Harsh",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cca89ce186c1a0f1",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "2c34214e6e337488",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b8d4ed3a132c5766",
+        "type": "ui_tab",
+        "name": "Harsh",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a3eb0305a9349cda",
+        "type": "ui_group",
+        "name": "Status ",
+        "tab": "b8d4ed3a132c5766",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "53e1266ce1737a6c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d55cdebf49885484",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2e928b442ce20157",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "553fc126b10e78fd",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7270c9a41a598853",
+        "type": "ui_group",
+        "name": "Humidity",
+        "tab": "b8d4ed3a132c5766",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "80b4bff99831a72d",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "b8d4ed3a132c5766",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef56a425cf8f8fc4",
+        "type": "ui_group",
+        "name": "Analysis",
+        "tab": "b8d4ed3a132c5766",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "deb8f5e81b5e7f3e",
+        "type": "ui_group",
+        "name": "Humidity",
+        "tab": "b8d4ed3a132c5766",
+        "order": 5,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3b41e4e5458d7193",
+        "type": "ui_group",
+        "name": "Trends",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0bc04ffe39bcc71d",
+        "type": "ui_group",
+        "name": "Trends",
+        "tab": "b8d4ed3a132c5766",
+        "order": 6,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "66312883f1d53eaa",
+        "type": "ui_group",
+        "name": "LED Center",
+        "tab": "b8d4ed3a132c5766",
+        "order": 7,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1c73ba2132ed025e",
+        "type": "ui_group",
+        "name": "Environmental Monitoring",
+        "tab": "b8d4ed3a132c5766",
+        "order": 8,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a272639c0a913414",
+        "type": "ui_group",
+        "name": "Street Light Pole",
+        "tab": "tab1",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "16e88242bd018875",
+        "type": "ui_group",
+        "name": "Street Light Pole",
+        "tab": "tab1",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "16b436056e42ec47",
+        "type": "ui_group",
+        "name": "Street Light Pole",
+        "tab": "tab1",
+        "order": 4,
+        "width": "6"
+    },
+    {
+        "id": "893aa5ec160a2a57",
+        "type": "ui_group",
+        "name": "Dual Street Light System",
+        "tab": "tab1",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "021d58580970368d",
+        "type": "ui_group",
+        "name": "Dual Street Light System",
+        "tab": "tab1",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "79cdf266a77d659c",
+        "type": "ui_group",
+        "name": "Dual Street Light System",
+        "tab": "tab1",
+        "order": 7,
+        "width": "6"
+    },
+    {
+        "id": "253331bb11d1892d",
+        "type": "ui_group",
+        "name": "Dual Street Light System",
+        "tab": "tab1",
+        "order": 8,
+        "width": "6"
+    },
+    {
+        "id": "747ad096750292d0",
+        "type": "ui_group",
+        "name": "Dual Street Light System",
+        "tab": "tab1",
+        "order": 9,
+        "width": "6"
+    },
+    {
+        "id": "mqtt_broker1",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Public",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ui_tab1",
+        "type": "ui_tab",
+        "name": "Smart Streetlight",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "ui_group1",
+        "type": "ui_group",
+        "name": "Streetlight Dashboard",
+        "tab": "ui_tab1",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "82d9c3bbb0c07566",
+        "type": "ui_tab",
+        "name": "Street Light Monitor",
+        "icon": "fa-lightbulb-o",
+        "order": 1
+    },
+    {
+        "id": "7df31ce3c1d1439e",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "82d9c3bbb0c07566",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "1cd8266793a7549d",
+        "type": "ui_tab",
+        "name": "Street Light Monitor",
+        "icon": "fa-lightbulb-o",
+        "order": 1
+    },
+    {
+        "id": "a201bd0a6d947c79",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "1cd8266793a7549d",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "e475da4776a8e686",
+        "type": "ui_tab",
+        "name": "Street Light Monitor",
+        "icon": "fa-lightbulb-o",
+        "order": 1
+    },
+    {
+        "id": "ce49ed97b2acd880",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "e475da4776a8e686",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "bfbb7a3bf045838e",
+        "type": "ui_tab",
+        "name": "Street Light Monitor",
+        "icon": "fa-lightbulb-o",
+        "order": 1
+    },
+    {
+        "id": "9ac99e77776646ec",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "bfbb7a3bf045838e",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "9c953c689b629a6c",
+        "type": "ui_tab",
+        "name": "Street Light Monitor",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2ff9abe0df34e030",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "9c953c689b629a6c",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "3673ae919ccaed62",
+        "type": "ui_group",
+        "name": "Analytics",
+        "tab": "9c953c689b629a6c",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "d5e93e8ef2e3472c",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Public",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "NodeRED_StreetLight_Dashboard",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "de3b4ebbb10cc472",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "ui_tab_main",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "712b4f66d0a03093",
+        "type": "ui_tab",
+        "name": "Street Light Monitor",
+        "icon": "fa-lightbulb-o",
+        "order": 1
+    },
+    {
+        "id": "b639b8c875f84376",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "712b4f66d0a03093",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "71b45e15c1d37e33",
+        "type": "mqtt in",
+        "z": "311cf2801f1cc4de",
+        "name": "MQTT Subscribe",
+        "topic": "streetlight/data",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "9b97f9fd551e1224",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "d61f1a5547219120"
+            ]
+        ]
+    },
+    {
+        "id": "d61f1a5547219120",
+        "type": "json",
+        "z": "311cf2801f1cc4de",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "d50c8a56345378cb"
+            ]
+        ]
+    },
+    {
+        "id": "d50c8a56345378cb",
+        "type": "function",
+        "z": "311cf2801f1cc4de",
+        "name": "Store & Enrich Data",
+        "func": "var d = msg.payload;\n\n/* ===== CURRENT (Already in AMPS from ESP32) ===== */\nd.AMP = parseFloat(d.AMP_A || 0).toFixed(3);   // Read Amps\n\nif (isNaN(d.AMP)) {\n  d.AMP = \"0.000\";\n}\n\n/* ===== COMPUTE STATES ===== */\nd.isNight = d.LDR > 1800;\nd.isFog = d.HUM > 65;\n\nd.timestamp = new Date().toLocaleTimeString('en-US', { hour12: false });\n\nd.ldrPercent = ((d.LDR / 4095) * 100).toFixed(1);\nd.brt1Percent = ((d.BRT1 / 255) * 100).toFixed(0);\nd.brt2Percent = ((d.BRT2 / 255) * 100).toFixed(0);\n\n/* ===== ESP32 CONNECTION CHECK ===== */\nvar lastSeen = flow.get(\"lastSeenESP32\");\n\n// If ESP32 sent data in last 12 sec → Online\nif (lastSeen && (Date.now() - lastSeen < 12000)) {\n  d.deviceOnline = true;\n} else {\n  d.deviceOnline = false;\n}\n\n/* ===== STORE HISTORY (LAST 30 VALUES) ===== */\nvar hist = flow.get('history') || [];\n\nhist.push({\n  time: d.timestamp,\n  TEMP: d.TEMP || 0,\n  HUM: d.HUM || 0,\n  AMP: parseFloat(d.AMP)   // Store in Amps\n});\n\nif (hist.length > 30) {\n  hist.shift();\n}\n\nflow.set('history', hist);\n\nd.history = hist;\n\n/* ===== SAVE LAST DATA ===== */\nflow.set('sensorData', d);\n\nmsg.payload = d;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 200,
+        "wires": [
+            [
+                "5bb020737ab11216"
+            ]
+        ]
+    },
+    {
+        "id": "5bb020737ab11216",
+        "type": "ui_template",
+        "z": "311cf2801f1cc4de",
+        "group": "b639b8c875f84376",
+        "name": "Full Dashboard UI",
+        "order": 1,
+        "width": "24",
+        "height": "38",
+        "format": "<style>\n@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');\n\n.sl-dashboard {\n  font-family: 'Inter', sans-serif;\n  background: #171c28;\n  color: #c8d6e5;\n  padding: 20px;\n  min-height: 100vh;\n  background-image:\n    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),\n    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);\n  background-size: 40px 40px;\n}\n\n.sl-header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding-bottom: 16px;\n  border-bottom: 1px solid #252d3a;\n  margin-bottom: 20px;\n}\n\n.sl-header h1 {\n  font-size: 20px;\n  font-weight: 700;\n  color: #e8edf3;\n  margin: 0;\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\n.sl-badges {\n  display: flex;\n  gap: 8px;\n}\n\n.sl-badge {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  padding: 4px 12px;\n  border-radius: 20px;\n  font-size: 12px;\n  font-weight: 500;\n  background: #1e2636;\n  border: 1px solid #2a3444;\n}\n\n.sl-badge-fog {\n  background: rgba(0,200,200,0.1);\n  border-color: rgba(0,200,200,0.3);\n  color: #00c8c8;\n}\n\n.sl-dot {\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  animation: sl-pulse 2s ease-in-out infinite;\n}\n\n.sl-dot-green {\n  background: #2ed573;\n  box-shadow: 0 0 8px rgba(46,213,115,0.6);\n}\n\n.sl-dot-red {\n  background: #ff4757;\n  box-shadow: 0 0 8px rgba(255,71,87,0.4);\n}\n\n@keyframes sl-pulse {\n  0%, 100% { opacity: 1; }\n  50% { opacity: 0.5; }\n}\n\n.sl-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 16px;\n  margin-bottom: 16px;\n}\n\n.sl-grid-2 {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 16px;\n  margin-bottom: 16px;\n}\n\n.sl-card {\n  background: #1e2636;\n  border-radius: 12px;\n  border: 1px solid #2a3444;\n  padding: 20px;\n  position: relative;\n  overflow: hidden;\n  transition: all 0.3s ease;\n}\n\n.sl-card:hover {\n  border-color: rgba(0,200,200,0.4);\n  box-shadow: 0 0 20px rgba(0,200,200,0.15);\n}\n\n.sl-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 2px;\n  background: linear-gradient(90deg, transparent, #00c8c8, transparent);\n  opacity: 0.6;\n}\n\n.sl-card-amber::before {\n  background: linear-gradient(90deg, transparent, #e8a838, transparent);\n}\n\n.sl-card-green::before {\n  background: linear-gradient(90deg, transparent, #2ed573, transparent);\n}\n\n.sl-card-red::before {\n  background: linear-gradient(90deg, transparent, #ff4757, transparent);\n}\n\n.sl-card-title {\n  font-size: 11px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 1.5px;\n  color: #7f8c9b;\n  margin-bottom: 16px;\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n\n.sl-value {\n  font-family: 'JetBrains Mono', monospace;\n  font-size: 36px;\n  font-weight: 700;\n  text-align: center;\n  background: linear-gradient(135deg, #00c8c8, #7dd8d8);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n}\n\n.sl-value-amber {\n  background: linear-gradient(135deg, #e8a838, #f0c86e);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n}\n\n.sl-value-green {\n  background: linear-gradient(135deg, #2ed573, #7bed9f);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n}\n\n.sl-unit {\n  font-size: 12px;\n  color: #7f8c9b;\n  text-align: center;\n  margin-top: 4px;\n}\n\n.sl-gauge-wrap {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.sl-gauge-svg {\n  width: 120px;\n  height: 120px;\n  transform: rotate(-90deg);\n  filter: drop-shadow(0 0 12px rgba(0,200,200,0.3));\n}\n\n.sl-gauge-bg {\n  fill: none;\n  stroke: #252d3a;\n  stroke-width: 6;\n}\n\n.sl-gauge-fill {\n  fill: none;\n  stroke: #00c8c8;\n  stroke-width: 6;\n  stroke-linecap: round;\n  transition: stroke-dashoffset 0.7s ease;\n}\n\n.sl-gauge-fill-amber {\n  stroke: #e8a838;\n}\n\n.sl-gauge-fill-green {\n  stroke: #2ed573;\n}\n\n.sl-gauge-center {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n}\n\n.sl-progress {\n  height: 6px;\n  background: #252d3a;\n  border-radius: 3px;\n  overflow: hidden;\n  margin-top: 8px;\n}\n\n.sl-progress-fill {\n  height: 100%;\n  border-radius: 3px;\n  transition: width 0.5s ease;\n  background: #e8a838;\n}\n\n.sl-progress-fill-cyan {\n  background: #00c8c8;\n}\n\n.sl-pole-light {\n  width: 70px;\n  height: 70px;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin: 0 auto 12px;\n  font-family: 'JetBrains Mono', monospace;\n  font-size: 13px;\n  font-weight: 700;\n  color: #171c28;\n  transition: all 0.5s ease;\n}\n\n.sl-pole-on {\n  background: radial-gradient(circle, #ffffff 10%, #ffe066 40%, #ffcc00 70%);\n  box-shadow: 0 0 30px rgba(232,168,56,0.6), 0 0 60px rgba(232,168,56,0.3);\n}\n\n.sl-pole-dim {\n  background: radial-gradient(circle, #8a7030, #5a4820);\n  box-shadow: 0 0 10px rgba(232,168,56,0.2);\n}\n\n.sl-pole-off {\n  background: #252d3a;\n  color: #7f8c9b;\n}\n\n.sl-pole-fog {\n  background: radial-gradient(circle, #7dd8d8, #00c8c8);\n  box-shadow: 0 0 30px rgba(0,200,200,0.6), 0 0 60px rgba(0,200,200,0.3);\n}\n\n.sl-row {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  font-size: 12px;\n  padding: 4px 0;\n}\n\n.sl-row-label { color: #7f8c9b; }\n.sl-row-value { font-family: 'JetBrains Mono', monospace; color: #e8edf3; }\n\n.sl-motion-active { color: #2ed573; }\n.sl-motion-clear { color: #7f8c9b; }\n\n/* Chart Styles */\n.sl-chart-container {\n  position: relative;\n  width: 100%;\n  height: 220px;\n  margin-top: 8px;\n}\n\n.sl-chart-canvas {\n  width: 100%;\n  height: 100%;\n}\n\n.sl-chart-legend {\n  display: flex;\n  justify-content: center;\n  gap: 24px;\n  margin-top: 12px;\n}\n\n.sl-legend-item {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  font-size: 11px;\n  color: #7f8c9b;\n}\n\n.sl-legend-dot {\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n}\n\n@media (max-width: 768px) {\n  .sl-grid { grid-template-columns: repeat(2, 1fr); }\n}\n\n/* ===== MOBILE RESPONSIVE FIX ===== */\n@media (max-width: 768px) {\n\n/* Reduce padding */\n.sl-dashboard {\npadding: 10px;\n}\n\n/* Header layout */\n.sl-header {\nflex-direction: column;\ngap: 10px;\ntext-align: center;\n}\n\n.sl-header h1 {\nfont-size: 16px;\n}\n\n/* Badges wrap */\n.sl-badges {\nflex-wrap: wrap;\njustify-content: center;\n}\n\n/* Grid → 1 column */\n.sl-grid {\ngrid-template-columns: 1fr !important;\n}\n\n.sl-grid-2 {\ngrid-template-columns: 1fr !important;\n}\n\n/* Card padding */\n.sl-card {\npadding: 14px;\n}\n\n/* Values smaller */\n.sl-value {\nfont-size: 26px;\n}\n\n.sl-value-amber,\n.sl-value-green {\nfont-size: 26px;\n}\n\n/* Gauges smaller */\n.sl-gauge-svg {\nwidth: 90px;\nheight: 90px;\n}\n\n/* Pole lights smaller */\n.sl-pole-light {\nwidth: 55px;\nheight: 55px;\nfont-size: 11px;\n}\n\n/* Charts responsive */\n.sl-chart-container {\nheight: 180px;\n}\n\n/* Rows spacing */\n.sl-row {\nfont-size: 11px;\n}\n}\n</style>\n\n<div class=\"sl-dashboard\" ng-init=\"initChart()\">\n  <div class=\"sl-header\">\n    <h1>💡 Smart Street Light Controller</h1>\n    <div class=\"sl-badges\">\n      <span>\n        <span class=\"sl-dot\"\n              ng-class=\"{\n                'sl-dot-green': msg.payload.deviceOnline,\n                'sl-dot-red': !msg.payload.deviceOnline\n              }\"></span>\n      {{msg.payload.deviceOnline ? '🟢 Connected' : '🔴 Disconnected'}}\n      </span>\n      <div class=\"sl-badge\">{{msg.payload.isNight ? '🌙 Night' : '☀️ Day'}}</div>\n      <div class=\"sl-badge sl-badge-fog\" ng-if=\"msg.payload.isFog\">🌫️ Fog Alert</div>\n    </div>\n  </div>\n\n  <div class=\"sl-grid\">\n    <!-- Temperature -->\n    <div class=\"sl-card sl-card-amber\">\n      <div class=\"sl-card-title\">🌡️ Temperature</div>\n      <div class=\"sl-gauge-wrap\">\n        <div style=\"position:relative\">\n          <svg class=\"sl-gauge-svg\" viewBox=\"0 0 100 100\">\n            <circle class=\"sl-gauge-bg\" cx=\"50\" cy=\"50\" r=\"45\"/>\n            <circle class=\"sl-gauge-fill sl-gauge-fill-amber\" cx=\"50\" cy=\"50\" r=\"45\"\n              stroke-dasharray=\"282.74\"\n              stroke-dashoffset=\"{{282.74 - (msg.payload.TEMP / 50) * 282.74}}\"/>\n          </svg>\n          <div class=\"sl-gauge-center\">\n            <div class=\"sl-value sl-value-amber\" style=\"font-size:22px\">{{msg.payload.TEMP}}</div>\n            <div class=\"sl-unit\">°C</div>\n          </div>\n        </div>\n        <div class=\"sl-unit\" style=\"margin-top:8px\">DHT11 Sensor</div>\n      </div>\n    </div>\n\n    <!-- Humidity -->\n    <div class=\"sl-card\">\n      <div class=\"sl-card-title\">💧 Humidity</div>\n      <div class=\"sl-gauge-wrap\">\n        <div style=\"position:relative\">\n          <svg class=\"sl-gauge-svg\" viewBox=\"0 0 100 100\">\n            <circle class=\"sl-gauge-bg\" cx=\"50\" cy=\"50\" r=\"45\"/>\n            <circle class=\"sl-gauge-fill\" cx=\"50\" cy=\"50\" r=\"45\"\n              stroke-dasharray=\"282.74\"\n              stroke-dashoffset=\"{{282.74 - (msg.payload.HUM / 100) * 282.74}}\"/>\n          </svg>\n          <div class=\"sl-gauge-center\">\n            <div class=\"sl-value\" style=\"font-size:22px\">{{msg.payload.HUM}}</div>\n            <div class=\"sl-unit\">%</div>\n          </div>\n        </div>\n        <div class=\"sl-unit\" style=\"margin-top:8px\">Relative Humidity</div>\n      </div>\n    </div>\n\n    <!-- LDR -->\n    <div class=\"sl-card sl-card-amber\">\n      <div class=\"sl-card-title\">🔆 Light Level</div>\n      <div style=\"text-align:center\">\n        <div class=\"sl-value sl-value-amber\">{{msg.payload.LDR}}</div>\n        <div class=\"sl-unit\">/ 4095</div>\n        <div class=\"sl-progress\"><div class=\"sl-progress-fill\" style=\"width:{{msg.payload.ldrPercent}}%\"></div></div>\n        <div class=\"sl-unit\" style=\"margin-top:8px\">{{msg.payload.isNight ? 'Low Light — LEDs Active' : 'Bright — LEDs Off'}}</div>\n      </div>\n    </div>\n\n    <!-- Current -->\n    <div class=\"sl-card sl-card-green\">\n      <div class=\"sl-card-title\">⚡ Current Draw</div>\n      <div class=\"sl-gauge-wrap\">\n        <div style=\"position:relative\"> <svg class=\"sl-gauge-svg\" viewBox=\"0 0 100 100\">\n            <circle class=\"sl-gauge-bg\" cx=\"50\" cy=\"50\" r=\"45\" />\n            <circle class=\"sl-gauge-fill sl-gauge-fill-green\" cx=\"50\" cy=\"50\" r=\"45\" stroke-dasharray=\"282.74\"\n              stroke-dashoffset=\"{{282.74 - (msg.payload.AMP / 5) * 282.74}}\" />\n          <div class=\"sl-gauge-center\">\n            <div class=\"sl-value sl-value-green\" style=\"font-size:22px\">{{msg.payload.AMP}}</div>\n            <div class=\"sl-unit\">A</div>\n          </div>\n        </div>\n        <div class=\"sl-unit\" style=\"margin-top:8px\">ACS712 Sensor</div>\n      </div>\n    </div>\n    </div>\n\n  <!-- Poles -->\n  <div class=\"sl-grid-2\">\n    <div class=\"sl-card\" ng-class=\"{'sl-card-amber': msg.payload.BRT1 > 0}\">\n      <div class=\"sl-card-title\">🏮 Street Light — Pole 1 and 2</div>\n      <div class=\"sl-pole-light\" ng-class=\"{'sl-pole-on': msg.payload.BRT1 >= 200 && msg.payload.FOG1 == 0, 'sl-pole-dim': msg.payload.BRT1 > 0 && msg.payload.BRT1 < 200 && msg.payload.FOG1 == 0, 'sl-pole-off': msg.payload.BRT1 == 0, 'sl-pole-fog': msg.payload.FOG1 > 0}\">\n        {{msg.payload.brt1Percent}}%\n      </div>\n      <div class=\"sl-row\"><span class=\"sl-row-label\">Brightness</span><span class=\"sl-row-value\">{{msg.payload.BRT1}} / 255</span></div>\n      <div class=\"sl-progress\"><div class=\"sl-progress-fill\" style=\"width:{{msg.payload.brt1Percent}}%\"></div></div>\n      <div class=\"sl-row\" style=\"margin-top:8px\"><span class=\"sl-row-label\">Fog Light</span><span class=\"sl-row-value\" ng-style=\"{'color': msg.payload.FOG1 > 0 ? '#00c8c8' : '#7f8c9b'}\">{{msg.payload.FOG1 > 0 ? 'ON' : 'OFF'}}</span></div>\n      <div class=\"sl-row\"><span class=\"sl-row-label\">Motion</span><span ng-class=\"{'sl-motion-active': msg.payload.MOT1, 'sl-motion-clear': !msg.payload.MOT1}\"><span class=\"sl-dot\" ng-class=\"{'sl-dot-green': msg.payload.MOT1, 'sl-dot-red': !msg.payload.MOT1}\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"></span>{{msg.payload.MOT1 ? 'Detected' : 'Clear'}}</span></div>\n    </div>\n\n    <div class=\"sl-card\" ng-class=\"{'sl-card-amber': msg.payload.BRT2 > 0}\">\n      <div class=\"sl-card-title\">🏮 Street Light — Pole 3 and 4</div>\n      <div class=\"sl-pole-light\" ng-class=\"{'sl-pole-on': msg.payload.BRT2 >= 200 && msg.payload.FOG2 == 0, 'sl-pole-dim': msg.payload.BRT2 > 0 && msg.payload.BRT2 < 200 && msg.payload.FOG2 == 0, 'sl-pole-off': msg.payload.BRT2 == 0, 'sl-pole-fog': msg.payload.FOG2 > 0}\">\n        {{msg.payload.brt2Percent}}%\n      </div>\n      <div class=\"sl-row\"><span class=\"sl-row-label\">Brightness</span><span class=\"sl-row-value\">{{msg.payload.BRT2}} / 255</span></div>\n      <div class=\"sl-progress\"><div class=\"sl-progress-fill\" style=\"width:{{msg.payload.brt2Percent}}%\"></div></div>\n      <div class=\"sl-row\" style=\"margin-top:8px\"><span class=\"sl-row-label\">Fog Light</span><span class=\"sl-row-value\" ng-style=\"{'color': msg.payload.FOG2 > 0 ? '#00c8c8' : '#7f8c9b'}\">{{msg.payload.FOG2 > 0 ? 'ON' : 'OFF'}}</span></div>\n      <div class=\"sl-row\"><span class=\"sl-row-label\">Motion</span><span ng-class=\"{'sl-motion-active': msg.payload.MOT2, 'sl-motion-clear': !msg.payload.MOT2}\"><span class=\"sl-dot\" ng-class=\"{'sl-dot-green': msg.payload.MOT2, 'sl-dot-red': !msg.payload.MOT2}\" style=\"display:inline-block;vertical-align:middle;margin-right:6px\"></span>{{msg.payload.MOT2 ? 'Detected' : 'Clear'}}</span></div>\n    </div>\n  </div>\n\n  <!-- Live Telemetry Chart -->\n  <div class=\"sl-card\" style=\"margin-bottom:16px\">\n    <div class=\"sl-card-title\">📊 Live Telemetry</div>\n    <div class=\"sl-chart-container\">\n      <canvas id=\"slTelemetryChart\" class=\"sl-chart-canvas\"></canvas>\n    </div>\n    <div class=\"sl-chart-legend\">\n      <div class=\"sl-legend-item\"><div class=\"sl-legend-dot\" style=\"background:#e8a838\"></div> Temp °C</div>\n      <div class=\"sl-legend-item\"><div class=\"sl-legend-dot\" style=\"background:#00c8c8\"></div> Humidity %</div>\n      <div class=\"sl-legend-item\"><div class=\"sl-legend-dot\" style=\"background:#2ed573\"></div> Current mA</div>\n    </div>\n  </div>\n</div>\n\n<script>\n  (function(scope){\n\n  var canvas, ctx;\n\n  function init() {\n    canvas = document.getElementById('slTelemetryChart');\n    if(!canvas) return;\n\n    ctx = canvas.getContext('2d');\n  }\n\n  function drawChart(history) {\n\n    if(!history || history.length === 0) return;\n\n    if(!canvas) init();\n    if(!ctx) return;\n\n    var W = canvas.width = canvas.parentElement.clientWidth;\n    var H = canvas.height = canvas.parentElement.clientHeight;\n\n    ctx.clearRect(0,0,W,H);\n\n    var pad = {top:20,right:20,bottom:30,left:45};\n\n    var cw = W - pad.left - pad.right;\n    var ch = H - pad.top - pad.bottom;\n\n    /* Grid */\n    ctx.strokeStyle = '#252d3a';\n\n    for(let i=0;i<=5;i++){\n      let y = pad.top + (ch/5)*i;\n\n      ctx.beginPath();\n      ctx.moveTo(pad.left,y);\n      ctx.lineTo(W-pad.right,y);\n      ctx.stroke();\n    }\n\n    /* Max scale */\n    let max = 0;\n\n    history.forEach(d=>{\n      max = Math.max(max,d.TEMP,d.HUM,d.AMP_mA);\n    });\n\n    max = Math.max(max,100)*1.2;\n\n    /* Y labels */\n    ctx.fillStyle='#7f8c9b';\n    ctx.font='10px JetBrains Mono';\n    ctx.textAlign='right';\n\n    for(let i=0;i<=5;i++){\n\n      let v = (max - (max/5)*i).toFixed(0);\n      let y = pad.top + (ch/5)*i;\n\n      ctx.fillText(v,pad.left-8,y+4);\n    }\n\n    /* Lines */\n    function draw(key,color){\n\n      ctx.strokeStyle=color;\n      ctx.lineWidth=2;\n\n      ctx.beginPath();\n\n      history.forEach((d,i)=>{\n\n        let x = pad.left + (cw/(history.length-1))*i;\n        let y = pad.top + ch - (d[key]/max)*ch;\n\n        if(i===0) ctx.moveTo(x,y);\n        else ctx.lineTo(x,y);\n\n      });\n\n      ctx.stroke();\n    }\n\n    draw('TEMP','#e8a838');\n    draw('HUM','#00c8c8');\n    draw('AMP_mA','#2ed573');\n  }\n\n\n  /* Watch payload */\n\n  scope.$watch('msg.payload.history',function(val){\n\n    if(val){\n      drawChart(val);\n    }\n\n  },true);\n\n\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3fbb69d8c2eb8a2",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
